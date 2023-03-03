@@ -1,0 +1,22 @@
+Interim reports:
+
+17.3.
+The initial commit contains maybe a little too much information because I recreated the git project after realising that I added gitignore file a bit too late to keep the git repository nice and clean.
+Classes: Game, GameObject, Tower, Enemy, Ticker and FileManager have been added to the project. Game class draws simple 2D graphics program and has an update function that calls every gameObjects' update function.
+Ticker calls Game class' update function repeatedly. GameObject class contains basic information, such as coordinates and id, about each GameObject. There is also update function which is abstract.
+Enemy and Tower classes have implementations of GameObject class' abstract variables and functions. At this point, there is no code at all in FileManager object.
+Every method works properly and there has been little to none difficulties. I am lagging a little bit behind the plan because I have spent only about 5 hours doing this project.
+
+31.3.
+I have added game maps' file handling to FileManager and Game classes. This is not fully ready yet because it cannot handle files which do not follow strictly the expected format.
+PathTile, SpawnTile and EndTile classes have also been added to the project. I have also started implemententing Enemy objects' movement.
+I have faced some minor issues when implementing the movement, but I am pretty sure that I just have to rethink my code implementation to get the problems solved. In addition, I added a simple map text file for test purposes.
+I have not been able to work on this project for very long during last weeks and that is why I am still lagging behind the plan. However, I have planned to spend some time doing this project for a next few days.
+Last two weeks I worked only about 5 hours on this project.
+
+14.4.
+I created a better version for map files and map file handling. I finished Enemy objects' movement and implemented their deletion when they reach the end of the path.
+Besides, I added game pausing feature. Lastly, I added tower's building feature and their collision with path and each other so that one can only place towers on top of a grass.
+Tower's building feature has been tested with GUI and it works properly. Map files' handling is not ready yet. It requires wrong file format handling and testing.
+The previous map file type made it difficult to assign right target path tiles to each PathTile, so I had to create a new map file type.
+I used approximately 20 hours on this project on these last two weeks and I am still lagging a little bit behind the plan.
